@@ -40,7 +40,7 @@ getCocktail()
           <div class="line"></div>
           <div class="slider">
             <Swiper class="swiper" :slides-per-view="3" :space-between="50">
-              <swiper-slide v-for="(ingredient, key) in ingredients" :key="key">
+              <swiper-slide v-for="(ingredient, key) in ingredients" :key="key" class="swiperSlide">
                 <img :src="`${INGREDIENT_PIC}${ingredient}-small.png`" width="100" height="100" class="swiper-img"/>
                 <div class="name">
                   {{ ingredient }}
@@ -70,14 +70,24 @@ getCocktail()
 @media (max-width: 1047px)
   .instructions
     font-size: 12px
-    max-width: 35%
+    max-width: 100%
   .swiper
-    max-width: 35%
+    min-width: 75%
+    width: 0
     img
-      width: 50px
-      height: 50px
+      // max-width: 75%
+      // max-height: 75%
+      width: 15px
+      height: 15px
     .name
       padding-top: 10px
       font-size: 8px
       max-width: 50px
+  .slider
+    min-width: 75%
+  .info
+    min-width: 75%
+  .swiperSlide
+    margin-right: 10px !important
+    flex-shrink: 1
 </style>

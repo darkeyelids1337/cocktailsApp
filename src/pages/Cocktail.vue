@@ -61,10 +61,13 @@ getCocktail()
 @import '@/assets/styles/main.sass'
 
 @media (max-width: 1047px)
+
+  .info
+    max-width: 100%
   .list
-    width: 25%
+    width: 100%
     margin: 0 auto
   .instructions
     font-size: 12px
-    max-width: 35%
+    max-width: 85%
 </style>
