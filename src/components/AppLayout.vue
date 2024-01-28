@@ -34,7 +34,7 @@ function goForCocktailRandom(){
 
 <template>
     <div class="root">
-        <div class="img"></div>
+        <div :style="`background-image: url(${imgUrl})`" class="img"></div>
         <div class="main">
             <div class="btns">
                 <el-button v-show="isArrow" @click="backFunc" type="primary" :icon="Back" circle class="back"></el-button>
@@ -50,8 +50,7 @@ function goForCocktailRandom(){
 <style lang="sass" scoped>
 @import '../assets/styles/main'
 
-.img
-    background-image: url("/cocktailsApp/public/bg-1.jpg")
+
 .root 
     display: flex
     background-color: $background

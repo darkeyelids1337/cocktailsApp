@@ -18,7 +18,7 @@ function getCocktails(ingredient) {
 
 <template>
   <AppLayout
-    imgUrl="/cocktailsApp/src/assets/img/bg-1.png"
+    imgUrl="/cocktailsApp/bg-1.jpg"
     :backFunc="goBack"
     :isArrow="ingredient"
   >
